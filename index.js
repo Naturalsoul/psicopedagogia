@@ -12,7 +12,6 @@ server.use(bodyParser.json())
 server.use(bodyParser.urlencoded({extended: false}))
 
 server.get("/", function(req, res) {
-	// var file = pug.renderFile("./views/index.pug")
 	res.render("index", {name: "Angelo"})
 })
 

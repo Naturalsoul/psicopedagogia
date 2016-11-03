@@ -2,9 +2,28 @@ doctype html
 html(lang="en")
 	head
 		title Psicopedagogia
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
 		link(rel="stylesheet", href="/css/bootstrap.min.css")
 		link(rel="stylesheet", href="/css/styles.css")
 	body
+		nav.navbar.navbar-default.navbar-fixed-top(role="navigation")
+			.container
+				.navbar-header
+					button.navbar-toggle.collapse(type="button", data-toggle="collapse", data-target="#navbar", aria-expanded="false")
+						span.sr-only Toggle navigation
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+					a.navbar-brand(href="#") Psicopedagogia
+				#navbar.navbar-collapse.collapse
+					ul.nav.navbar-nav.navbar-right
+						li
+							a(href="#") Home
+						li
+							a(href="#about") About
+
+
 		block content
 		hr
 		script(src="/js/jquery-3.1.1.min.js")
